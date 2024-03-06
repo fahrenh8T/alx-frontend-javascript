@@ -1,11 +1,12 @@
 function getResponseFromAPI() {
     return new Promise((resolve, reject) => {
       // API call logic here
-      // ...
       if (responseFromAPI) {
-        resolve(responseFromAPI); // resolve with API response
+        // resolve with API response
+        resolve(responseFromAPI); 
       } else {
-        reject("Error: API call failed"); // reject with error message
+        // reject with error message
+        reject("Error: API call failed");
       }
     });
   }
