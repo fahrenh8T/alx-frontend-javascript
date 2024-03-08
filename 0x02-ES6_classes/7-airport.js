@@ -5,11 +5,11 @@ export default class Airport {
       } else if (typeof code !== 'string') {
         throw new TypeError('Code must be a string');
       }
-  
+
       this._name = name;
       this._code = code;
     }
-  
+
     get [Symbol.toStringTag]() {
       return `${this._code}`;
     }
