@@ -5,11 +5,11 @@ export default class HolbertonClass {
       } else if (typeof location !== 'string') {
         throw new TypeError('Location must be a string');
       }
-  
+
       this._size = size;
       this._location = location;
     }
-  
+
     [Symbol.toPrimitive](hint) {
       if (hint === 'number') {
         return this._size;
